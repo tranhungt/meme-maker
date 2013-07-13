@@ -1,0 +1,28 @@
+// Place all the styles related to the memes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.sidebar{
+  float: left;
+  padding: 20px;
+}
+.display_photo{
+  float: right;
+  center-aling: center;
+
+}
+
+.grid{
+  list-style: none;
+  li{
+    display: inline-block
+  }
+}
+
+.nav{
+  list-style: none;
+  li{ 
+    display: inline;
+    padding: 10px;
+  }
+}

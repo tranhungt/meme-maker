@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MemeMaker</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <ul class='nav'>
+    <li><a href="#/">Main</a></li>
+    <li><a href="#/memes">Memes Made</a></li>
+  </ul>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

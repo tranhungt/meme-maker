@@ -1,0 +1,22 @@
+<div class="sidebar">
+  <button id="save_meme" class="modal-close" data-dismiss="modal">Save</button>
+  <label for="meme_top_text">Top Text</label>
+  <input type="text" name='meme[top_text]' id="meme_top_text">
+  <label for="meme_bottom_text">Bottom Text</label>
+  <input type="text" name='meme[bottom_text' id="meme_bottom_text">
+ </div> 
+
+<div class="photo_display">
+  <canvas id="viewport" width = "<%= width %>" height = "<%= height %>"></canvas>
+</div>
+
+<script>
+  var canvas = document.getElementById('viewport');
+  console.log(canvas)
+  context = canvas.getContext('2d');
+  var image = new Image();
+  image.src = '<%= photo.attributes.url %>'
+  image.onload = function(){
+    context.drawImage(image, 0,0, image.naturalWidth,image.naturalHeight)
+  }
+</script>

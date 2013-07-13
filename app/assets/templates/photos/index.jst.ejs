@@ -1,0 +1,10 @@
+<a href="#" id="new_photo_link">Upload a New Photo</a>
+<ul class='grid'>
+<% photos.each(function(photo){ %>
+  <li>
+  <a href="#" id="new_meme_form" data-id="<%= photo.id %>">
+    <img src='<%= photo.attributes.thumb %>'>
+  </a>
+  </li>
+<% }) %>
+</ul>

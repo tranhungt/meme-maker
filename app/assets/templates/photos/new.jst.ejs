@@ -1,0 +1,22 @@
+<form id="new_photo_form" 
+          action="/photos" 
+          method="POST" 
+          enctype="multipart/form-data" style="opacity: 0;">
+  <input type="file" name="photo[image]" id="photo_input">
+  <input name="authenticity_token" type="hidden" value="$('meta[name="csrf-token"]').attr('content')" />
+</form>
+
+
+
+<div class="upload_photo">
+<a href='#' id="upload_photo"></a>
+</div>
+
+<div id="add_photo_div">
+</div>
+
+<script>
+  //$('#upload_photo').click(function(event){
+    $('#photo_input').click();
+  //})
+</script>

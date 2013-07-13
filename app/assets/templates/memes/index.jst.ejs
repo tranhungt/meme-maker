@@ -1,0 +1,5 @@
+<% memes.each(function(meme){ %>
+  <a href='#/memes/<%= meme.id %>'>
+    <img src='<%=meme.attributes.thumb %>'>
+  </a>
+<% }) %>
