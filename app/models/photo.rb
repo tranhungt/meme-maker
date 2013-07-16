@@ -1,5 +1,5 @@
 class Photo < ActiveRecord::Base
-  attr_accessible :image
+  attr_accessible :image, :title
   has_attached_file :image, :styles => {:normal => '500x500>', :thumb => '250x250>'}
   validates :image, :presence => true
   def url
