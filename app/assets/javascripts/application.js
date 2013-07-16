@@ -16,6 +16,7 @@
 //= require backbone
 //= require memeMaker
 //= require backbone-modal-dialog
+//= require twitter/bootstrap
 //= require jquery.form
 //= require_tree ../templates
 //= require_tree ./models
