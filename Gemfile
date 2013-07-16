@@ -27,6 +27,7 @@ gem 'aws-sdk'
 gem 'less-rails-bootstrap'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
+gem 'figaro'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
